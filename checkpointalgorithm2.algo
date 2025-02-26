@@ -1,0 +1,56 @@
+//checkpoint 2.1 algorithm
+ALGORITHM checkpoint2algorithm
+VAR
+    arr1: array[1..50] of number;
+    arr2: array[1..50] of number;
+    SUM:=0,i,j: number;
+BEGIN
+    FOR i FROM 0 TO arr1.length STEP ++  DO
+        write("entrez les elements du tableau 1 :")
+        read(arr1[i]);
+    END_FOR
+    FOR j FROM 0 TO arr2.length STEP ++  DO
+        write("entrez les elements du tableau 2 :")
+        read(arr2[j]);
+    END_FOR
+    FOR j FROM 0 TO arr2.length STEP ++  DO
+        FOR i FROM 0 TO arr1.length STEP ++  DO
+            IF (arr2[j]<>arr1[i]) THEN
+                SUM:=SUM+arr[j];
+            ELSE
+                write("Les éléments des deux tableaux sont identiques");
+            END_IF
+        END_FOR
+    END_FOR
+    write("La somme des éléments différent du tableau 2 est ",SUM);
+END
+//checkpoint 2.2 algorithm
+ALGORITHM algorithm_name
+VAR
+    T1: array[3] of number;
+    T2: array[3] of number;
+BEGIN
+    FOR i FROM 0 TO 2 STEP ++  DO
+    write("Entrez les éléments du tableau 1 : ");
+    IF (T1.length>=2) THEN
+    read(T1);
+    ELSE
+        write("Entrez au minimum 2 elements");
+    END_IF
+    end for;
+    FOR j FROM 0 TO 2 STEP ++  DO
+    write("Entrez les éléments du tableau 2 : ");
+    IF (T2.length>=2) THEN
+    read(T2);
+    ELSE
+        write("Entrez au minimum 2 elements");
+    END_FOR
+    FOR k FROM 0 TO 2 STEP ++  DO
+        SUM:= SUM+T1[k]*T2[k];
+    END_FOR
+    IF (SUM:=0) THEN
+        write("Les deux tableaux sont orthogonaux");
+    ELSE
+        write("Les deux tableaux ne sont pas orthogonaux");
+    END_IF
+END
