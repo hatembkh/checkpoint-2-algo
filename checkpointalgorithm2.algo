@@ -1,5 +1,5 @@
 //checkpoint 2.1 algorithm
-ALGORITHM checkpoint2algorithm
+ALGORITHM Problem1
 VAR
     arr1: array[1..50] of number;
     arr2: array[1..50] of number;
@@ -25,7 +25,7 @@ BEGIN
     write("La somme des éléments différent du tableau 2 est ",SUM);
 END
 //checkpoint 2.2 algorithm
-ALGORITHM algorithm_name
+ALGORITHM Problem2 
 VAR
     T1: array[3] of number;
     T2: array[3] of number;
